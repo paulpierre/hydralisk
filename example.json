@@ -1,0 +1,13 @@
+{
+    "chain": "mumbai",
+    "duration": 3600,
+    "wallet_limit": 600,
+    "prefix": "spore",
+    "confirmation_blocks": 3,
+    "abi_name": "tower",
+    "contract_address": "0x9C0dCFb08d63011c047C32F92B8Cb40baa969b1b",
+    "method": "dailyLog(\"{uuid}\")",
+    "gas": 73109,
+    "gas_price": 1500000000,
+    "data": "🍄"
+}

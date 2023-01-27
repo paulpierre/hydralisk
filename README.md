@@ -27,6 +27,14 @@ Simply configure a file with the target # of wallets you want, contract address,
 - 🙌 This was built for a very specific use-case while still attempting to be generic. If you have a use-case that you think would be useful, please open an issue and let me know!
 
 # 💻 Installing
+
+### Requirements
+* Python 3.6+
+* Node.js
+* MacOS or Linux (Windows not tested)
+
+⚠️ It's insanely important you understand that key management with `eth-cli` is not safe. You should never use this tool with real funds. If you do, you are doing so at your own risk. ⚠️
+
 Getting started is simple, first create an environment
 ```
 python3 -m venv venv
@@ -194,8 +202,15 @@ For reference, this is what a successful contract execution looks like:
 https://ethereum.org/en/developers/docs/gas/
 
 
+#  👍 Issues and thank you!
+Thanks for reading this far. If you would like to see more, please give this repo a star ⭐ and follow me on [Twitter](https://twitter.com/paulpierre)!
+
+If you have any issues, please open an issue on this repo and I will get back to you as soon as I can.
+
+PRs are open, if there is sufficient interest I am more than excited to expand on the roadmap and/or collaborate.
+
 # 🛣️ Roadmap
-🚨 This was built as a proof-of-concept and is not intended for production 🚨. Open an issue or submit a PR if you have ideas.
+🚨 This was built as a proof-of-concept and is not intended for production 🚨. The private keys for all wallets are stored by `eth-cli` in plain-text and is not intended for use with larger sums of money you're not willing to lose..
 
 I will port `eth-cli` to Golang and create python bindings. The eventual goal is to create a performant framework for executing complex transactions with a focus on scale and shareability.
 
@@ -219,6 +234,7 @@ The general vision is to treat python as the glue code and port the core functio
 - [ ] Local Postgres DB for state management / logging / reporting
 
 ### Core backlog
+- [ ] Add testing, it's a PoC... but still
 - [ ] Remove dependency on `eth-cli` and port to Golang (or find lib that likely exists)
 - [ ] Add golang bindings
 - [ ] API support via FastAPI

@@ -1,0 +1,11 @@
+env/
+art/
+.env
+.trunk
+__pycache__/
+.vscode/
+abi/*
+src/*
+config/
+backup/
+.DS_Store

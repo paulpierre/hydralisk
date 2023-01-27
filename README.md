@@ -6,6 +6,8 @@ Hydralisk - scale and fund millions of EVM-chain wallets via CLI
 # 🔍 Overview
 Ever wanted to spin up a million wallets on Ethereum or Polygon? Or maybe you want to schedule a transaction to be sent out every 5 minutes for a year? Or maybe you want an army of wallets to trigger a smart contract function with a single command? Hydralisk is a CLI wrapper around [eth-cli](https://github.com/protofire/eth-cli) that accomplishes that and more.
 
+Simply configure a file with the target # of wallets you want, contract address, ABI, method, params , and Hydralisk will create the wallets, fund them via master wallet, and execute the transaction. You can also configure the duration and wallet limit to spread the transactions out over a period of time. Give it a try on Goerli testnet!
+
 # 😎 Features
 - 🗂️ Campaign management - Segregate all wallts via prefix, each campaign gets 1 master wallet to fund
 - 🧠 Smart execution - Wallet balances are checked, funded and spreads transactions out over a duration all in parallel

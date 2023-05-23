@@ -1,5 +1,5 @@
 typer==0.7.0
 python-dotenv==0.21.0
-requests==2.28.1
+requests==2.31.0
 rich
 anyio==3.6.2
